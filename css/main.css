@@ -89,7 +89,6 @@ body {
 }
 
 .container .konten .konten_faq .konten_isi_faq .header {
-  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -97,7 +96,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
-  margin-bottom: 2rem;
 }
 
 .container .konten .konten_faq .konten_isi_faq .header .icon_aktif {
@@ -114,7 +112,6 @@ body {
 }
 
 .container .konten .konten_faq .konten_isi_faq .header a {
-  overflow: hidden;
   font-size: 0.8125rem;
   text-decoration: none;
   color: #4a4b5e;
@@ -127,10 +124,12 @@ body {
 .container .konten .konten_faq .konten_isi_faq .isi_aktif {
   max-height: 200px;
   padding-bottom: 1rem;
+  visibility: visible;
 }
 
 .container .konten .konten_faq .konten_isi_faq .isi_diaktif {
   max-height: 0px;
+  visibility: hidden;
 }
 
 .container .konten .konten_faq .konten_isi_faq p {

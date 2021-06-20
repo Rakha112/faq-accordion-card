@@ -60,11 +60,9 @@ body {
                 padding: 1rem 0 0 0;
                 
                 .header {
-                    overflow: hidden;
                     display: flex;
                     align-items: center;
                     cursor: pointer;
-                    margin-bottom: 2rem;
                     .icon_aktif {
                         transform: rotate(180deg)
                     }
@@ -75,7 +73,6 @@ body {
                         transition: 0.3s all ease;
                     }
                     a {  
-                        overflow: hidden;
                         font-size: 0.8125rem;
                         text-decoration: none;
                         color: $Very_dark_grayish_blue;
@@ -87,9 +84,11 @@ body {
                 .isi_aktif {
                     max-height: 200px;
                     padding-bottom: 1rem;
+                    visibility: visible;
                 }
                 .isi_diaktif {
                     max-height: 0px;
+                    visibility: hidden;
                 }
                 p { 
                     max-height: 0px;
