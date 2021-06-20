@@ -49,6 +49,7 @@ body {
 }
 
 .container .konten {
+  overflow: hidden;
   width: 100%;
   background-color: white;
   padding-bottom: 3rem;
