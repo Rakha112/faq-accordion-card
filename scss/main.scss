@@ -37,6 +37,7 @@ body {
         background-color: white;
         padding-bottom: 3rem;
         border-radius: 1.25rem;
+        margin-bottom: 3.125rem;
         .konten_gambar {
                 background-image: url("../images/bg-pattern-mobile.svg");
                 background-repeat: no-repeat;
@@ -71,6 +72,9 @@ body {
                         max-width: 10px;
                         max-height: 7px;
                         transition: 0.3s all ease;
+                    }
+                    .a_aktif {
+                        font-weight: 700;
                     }
                     a {  
                         font-size: 0.8125rem;
