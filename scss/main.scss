@@ -56,8 +56,9 @@ body {
                 overflow: hidden;
                 background-color: white;
                 z-index: 1;
-                border-bottom: 2px solid $Light_grayish_blue;
+                border-bottom: 1px solid $Light_grayish_blue;
                 padding: 1rem 0 0 0;
+                margin-bottom: 0.25rem;
                 .header {
                     overflow: hidden;
                     display: flex;
@@ -73,6 +74,7 @@ body {
                         transition: 0.3s all ease;
                     }
                     a {  
+                        overflow: hidden;
                         font-size: 0.8125rem;
                         text-decoration: none;
                         color: $Very_dark_grayish_blue;

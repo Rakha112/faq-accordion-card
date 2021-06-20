@@ -84,8 +84,9 @@ body {
   overflow: hidden;
   background-color: white;
   z-index: 1;
-  border-bottom: 2px solid #e7e7e9;
+  border-bottom: 1px solid #e7e7e9;
   padding: 1rem 0 0 0;
+  margin-bottom: 0.25rem;
 }
 
 .container .konten .konten_faq .konten_isi_faq .header {
@@ -113,6 +114,7 @@ body {
 }
 
 .container .konten .konten_faq .konten_isi_faq .header a {
+  overflow: hidden;
   font-size: 0.8125rem;
   text-decoration: none;
   color: #4a4b5e;
