@@ -1,0 +1,103 @@
+@import "property";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 0.75rem;
+    background: linear-gradient($Soft_violet,$Soft_blue);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1.5rem;
+    position: relative;
+    .gambar {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 108px;
+        margin-right: 30px;
+        img {
+            
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    .konten {
+        width: 100%;
+        background-color: white;
+        padding-bottom: 3rem;
+        border-radius: 1.25rem;
+        .konten_gambar {
+                background-image: url("../images/bg-pattern-mobile.svg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-position-y: 0;
+                padding-top: 8.375rem;
+        }
+        .konten_faq {
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            padding: 0 1.5rem;
+            h1 {
+                text-align: center;
+            }
+            .konten_isi_faq {
+                background-color: white;
+                z-index: 1;
+                border-bottom: 1px solid $Light_grayish_blue;
+                padding: 1rem 0 0 0;
+                .header {
+                    
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    .icon_aktif {
+                        transform: rotate(180deg)
+                    }
+                    img {
+                        margin-left: auto;
+                        max-width: 10px;
+                        max-height: 7px;
+                        transition: 0.3s all ease;
+                    }
+                    a {  
+                        font-size: 0.8125rem;
+                        text-decoration: none;
+                        color: $Very_dark_grayish_blue;
+                    }
+                    a:hover {
+                        color: $Soft_red;
+                    }
+                }
+                .isi_aktif {
+                    max-height: 200px;
+                    padding-bottom: 1.125rem;
+                }
+                .isi_diaktif {
+                    max-height: 0px;
+                }
+                p { 
+                    max-height: 0px;
+                    z-index: 0;
+                    font-size: 12px;
+                    margin-right: 2rem;
+                    margin-top: 0.75rem;
+                    color: $Dark_grayish_blue;
+                    transition: 0.3s all ease;
+                }
+    
+            }
+        }
+
+    }
+}

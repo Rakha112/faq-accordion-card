@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 0.75rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background: linear-gradient(#af67e9, #6565e7);
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 1.5rem;
+  position: relative;
+}
+
+.container .gambar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 108px;
+  margin-right: 30px;
+}
+
+.container .gambar img {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container .konten {
+  width: 100%;
+  background-color: white;
+  padding-bottom: 3rem;
+  border-radius: 1.25rem;
+}
+
+.container .konten .konten_gambar {
+  background-image: url("../images/bg-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 0;
+  padding-top: 8.375rem;
+}
+
+.container .konten .konten_faq {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 1.5rem;
+}
+
+.container .konten .konten_faq h1 {
+  text-align: center;
+}
+
+.container .konten .konten_faq .konten_isi_faq {
+  background-color: white;
+  z-index: 1;
+  border-bottom: 1px solid #e7e7e9;
+  padding: 1rem 0 0 0;
+}
+
+.container .konten .konten_faq .konten_isi_faq .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.container .konten .konten_faq .konten_isi_faq .header .icon_aktif {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.container .konten .konten_faq .konten_isi_faq .header img {
+  margin-left: auto;
+  max-width: 10px;
+  max-height: 7px;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.container .konten .konten_faq .konten_isi_faq .header a {
+  font-size: 0.8125rem;
+  text-decoration: none;
+  color: #4a4b5e;
+}
+
+.container .konten .konten_faq .konten_isi_faq .header a:hover {
+  color: #f47c57;
+}
+
+.container .konten .konten_faq .konten_isi_faq .isi_aktif {
+  max-height: 200px;
+  padding-bottom: 1.125rem;
+}
+
+.container .konten .konten_faq .konten_isi_faq .isi_diaktif {
+  max-height: 0px;
+}
+
+.container .konten .konten_faq .konten_isi_faq p {
+  max-height: 0px;
+  z-index: 0;
+  font-size: 12px;
+  margin-right: 2rem;
+  margin-top: 0.75rem;
+  color: #787887;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+/*# sourceMappingURL=main.css.map */
