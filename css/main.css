@@ -88,6 +88,7 @@ body {
 }
 
 .container .konten .konten_faq .konten_isi_faq .header {
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

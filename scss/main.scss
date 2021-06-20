@@ -58,7 +58,7 @@ body {
                 border-bottom: 1px solid $Light_grayish_blue;
                 padding: 1rem 0 0 0;
                 .header {
-                    
+                    overflow: hidden;
                     display: flex;
                     align-items: center;
                     cursor: pointer;
