@@ -150,6 +150,7 @@ body {
 }
 
 .container .konten .konten_faq .konten_isi_faq p {
+  line-height: 1.5;
   padding-bottom: 1rem;
   font-size: 12px;
   margin-right: 2rem;
@@ -173,9 +174,9 @@ body {
             align-items: center;
     background-image: url("../images/illustration-woman-online-desktop.svg"), url("../images/bg-pattern-desktop.svg");
     background-position: center;
-    background-position-x: 0,-560px;
-    background-position-y: 0, -280px;
-    background-size: 100%, 200%;
+    background-position-x: -70px,-560px;
+    background-position-y: 50px, -280px;
+    background-size: 95%, 200%;
   }
   .container .konten .konten_gambar .mobile {
     display: none;
@@ -190,9 +191,10 @@ body {
     justify-self: center;
   }
   .container .konten .konten_gambar .box {
-    display: none;
     position: absolute;
-    width: 50%;
+    width: 40%;
+    top: 170px;
+    left: -90px;
     z-index: 1;
   }
   .container .konten .konten_faq {
@@ -206,8 +208,18 @@ body {
     font-size: 30px;
     margin-bottom: 2.125rem;
   }
+  .container .konten .konten_faq .diaktif {
+    max-height: 48px;
+  }
+  .container .konten .konten_faq .aktif {
+    max-height: 500px;
+  }
   .container .konten .konten_faq .konten_isi_faq .header a {
     font-size: 1rem;
+  }
+  .container .konten .konten_faq .konten_isi_faq p {
+    font-size: 13px;
+    margin-right: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

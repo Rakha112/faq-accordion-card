@@ -100,6 +100,7 @@ body {
                     }
                 }
                 p { 
+                    line-height: 1.5;
                     padding-bottom: 1rem;
                     font-size: 12px;
                     margin-right: 2rem;
@@ -128,9 +129,9 @@ body {
                 background-image: url("../images/illustration-woman-online-desktop.svg"), url("../images/bg-pattern-desktop.svg");
                 background-position: center;
                 
-                background-position-x: 0,-560px;
-                background-position-y: 0, -280px;
-                background-size: 100%, 200%;
+                background-position-x: -70px,-560px;
+                background-position-y: 50px, -280px;
+                background-size: 95%, 200%;
                 .mobile {
                     display: none;
                 }
@@ -142,9 +143,10 @@ body {
                     justify-self: center;
                 }
                 .box {
-                    display: none;
                     position: absolute;
-                    width: 50%;
+                    width: 40%;
+                    top: 170px;
+                    left: -90px;
                     z-index: 1;
                 }
             }
@@ -158,12 +160,21 @@ body {
                     font-size: 30px;
                     margin-bottom: 2.125rem;
                 }
-                
+                .diaktif {
+                    max-height: 48px;
+                }
+                .aktif {
+                    max-height: 500px;
+                }
                 .konten_isi_faq {
                     .header {
                         a {
                             font-size: 1rem;
                         }
+                    }
+                    p {
+                        font-size: 13px;
+                        margin-right: 0;
                     }
                 }
                 
