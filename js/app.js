@@ -1,20 +1,25 @@
-const judul = document.querySelectorAll(".header")
-const isi = document.querySelectorAll("p")
+const tombol = document.querySelectorAll(".header")
 const icon = document.querySelectorAll(".icon")
-const tombol = document.querySelectorAll("a")
-for (let i = 0; i < judul.length; i++) {
-    judul[i].addEventListener("click", e => {
-        if(isi[i].classList.contains("isi_diaktif")) {
-            tombol[i].classList.add("a_aktif")
-            icon[i].classList.add("icon_aktif")
-            isi[i].classList.add("isi_aktif")
-            isi[i].classList.remove("isi_diaktif")
-        } else {
-            tombol[i].classList.remove("a_aktif")
-            icon[i].classList.remove("icon_aktif")
-            isi[i].classList.remove("isi_aktif")
-            isi[i].classList.add("isi_diaktif")
-        }
-    })
-}
+const isi = document.querySelectorAll(".diaktif")
 
+// for (let i = 0; i < tombol.length; i++) {
+//     tombol[i].addEventListener("click", e => {
+//         isi[i].classList.toggle("diaktif")
+//         isi[i].classList.toggle("aktif")
+//         icon[i].classList.toggle("icon_aktif")
+//     })
+// }
+
+
+tombol.forEach(button => {
+  button.addEventListener('click',function(e) {
+    button.closest('.konten_isi_faq').classList.toggle('aktif');
+    tombol.forEach(one => {
+      let question = one.closest('.konten_isi_faq');
+      if(question != button.closest('.konten_isi_faq')) {
+        question.classList.remove('aktif');
+      }
+    })
+    
+  })
+})

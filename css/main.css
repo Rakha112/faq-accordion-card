@@ -32,6 +32,8 @@ body {
 }
 
 .container .konten {
+  -webkit-box-shadow: 0 30px 50px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 30px 50px rgba(0, 0, 0, 0.3);
   max-width: 57.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -92,7 +94,17 @@ body {
   text-align: center;
 }
 
+.container .konten .konten_faq .diaktif {
+  max-height: 40px;
+}
+
+.container .konten .konten_faq .aktif {
+  max-height: 500px;
+}
+
 .container .konten .konten_faq .konten_isi_faq {
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
   overflow: hidden;
   background-color: white;
   z-index: 1;
@@ -137,26 +149,12 @@ body {
   color: #f47c57;
 }
 
-.container .konten .konten_faq .konten_isi_faq .isi_aktif {
-  max-height: 200px;
-  padding-bottom: 1rem;
-  visibility: visible;
-}
-
-.container .konten .konten_faq .konten_isi_faq .isi_diaktif {
-  max-height: 0px;
-  visibility: hidden;
-}
-
 .container .konten .konten_faq .konten_isi_faq p {
-  max-height: 0px;
-  z-index: 0;
+  padding-bottom: 1rem;
   font-size: 12px;
   margin-right: 2rem;
   margin-top: 0.75rem;
   color: #787887;
-  -webkit-transition: 0.3s all ease;
-  transition: 0.3s all ease;
 }
 
 @media screen and (min-width: 62.5rem) {
@@ -169,30 +167,47 @@ body {
     margin: 0;
   }
   .container .konten .konten_gambar {
-    overflow: hidden;
     padding-top: 0;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-image: url("../images/bg-pattern-desktop.svg");
+    background-image: url("../images/illustration-woman-online-desktop.svg"), url("../images/bg-pattern-desktop.svg");
     background-position: center;
-    background-position-x: -100px;
-    background-size: cover;
+    background-position-x: 0,-560px;
+    background-position-y: 0, -280px;
+    background-size: 100%, 200%;
   }
   .container .konten .konten_gambar .mobile {
     display: none;
   }
   .container .konten .konten_gambar .dekstop {
     position: absolute;
-    left: -65px;
-    width: 90%;
+    left: -75px;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     justify-self: center;
   }
+  .container .konten .konten_gambar .box {
+    display: none;
+    position: absolute;
+    width: 50%;
+    z-index: 1;
+  }
   .container .konten .konten_faq {
-    padding-bottom: 3rem;
+    padding-top: 4.125rem;
+    padding-bottom: 5.25rem;
+    padding-right: 6rem;
+    padding-left: 0;
+  }
+  .container .konten .konten_faq h1 {
+    text-align: left;
+    font-size: 30px;
+    margin-bottom: 2.125rem;
+  }
+  .container .konten .konten_faq .konten_isi_faq .header a {
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

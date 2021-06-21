@@ -20,6 +20,7 @@ body {
     margin: 0 1.5rem;
     position: relative;
     .konten {
+        box-shadow: 0 30px 50px hsla(0, 0, 0, 0.3);
         max-width: 57.5rem;
         display: flex;
         flex-direction: column;
@@ -50,6 +51,7 @@ body {
                 }
                 
         }
+        
         .konten_faq {
             position: relative;
             overflow: hidden;
@@ -59,13 +61,19 @@ body {
             h1 {
                 text-align: center;
             }
-            .konten_isi_faq {
+            .diaktif {
+                max-height: 40px;
+            }
+            .aktif {
+                max-height: 500px;
+            }
+            .konten_isi_faq{
+                transition: 0.3s all ease;
                 overflow: hidden;
                 background-color: white;
                 z-index: 1;
                 border-bottom: 1px solid $Light_grayish_blue;
                 padding: 1rem 0 0 0;
-                
                 .header {
                     display: flex;
                     align-items: center;
@@ -91,23 +99,12 @@ body {
                         color: $Soft_red;
                     }
                 }
-                .isi_aktif {
-                    max-height: 200px;
-                    padding-bottom: 1rem;
-                    visibility: visible;
-                }
-                .isi_diaktif {
-                    max-height: 0px;
-                    visibility: hidden;
-                }
                 p { 
-                    max-height: 0px;
-                    z-index: 0;
+                    padding-bottom: 1rem;
                     font-size: 12px;
                     margin-right: 2rem;
                     margin-top: 0.75rem;
                     color: $Dark_grayish_blue;
-                    transition: 0.3s all ease;
                 }
     
             }
@@ -119,31 +116,56 @@ body {
 @media screen and (min-width: 62.5rem) {
     .container {
         .konten {
+            
             grid-template-columns: 1fr 1fr;
             display: grid;
             padding-bottom: 0;
             margin: 0;
             .konten_gambar {
-                overflow: hidden;
+
                 padding-top: 0;
                 align-items: center;
-                background-image: url("../images/bg-pattern-desktop.svg");
+                background-image: url("../images/illustration-woman-online-desktop.svg"), url("../images/bg-pattern-desktop.svg");
                 background-position: center;
-                background-position-x: -100px;
-                background-size: cover;
+                
+                background-position-x: 0,-560px;
+                background-position-y: 0, -280px;
+                background-size: 100%, 200%;
                 .mobile {
                     display: none;
                 }
                 .dekstop {
                     position: absolute;
-                    left: -65px;
-                    width: 90%;
+                    left: -75px;
+                    width: 100%;
                     display: flex;
                     justify-self: center;
                 }
+                .box {
+                    display: none;
+                    position: absolute;
+                    width: 50%;
+                    z-index: 1;
+                }
             }
             .konten_faq {
-                padding-bottom: 3rem;
+                padding-top: 4.125rem;
+                padding-bottom: 5.25rem;
+                padding-right: 6rem;
+                padding-left: 0;
+                h1 {
+                    text-align: left;
+                    font-size: 30px;
+                    margin-bottom: 2.125rem;
+                }
+                .konten_isi_faq {
+                    .header {
+                        a {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+                
             }
         }
     }
